@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Quieres ser mi novia?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #ffe6f0;
+      margin: 0;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #d6336c;
+      font-size: 2.5em;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .si {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .no {
+      background-color: #dc3545;
+      color: white;
+      position: relative;
+    }
+
+    .no:hover {
+      position: absolute;
+      top: calc(10px + 50 * (Math.random() - 0.5) + px);
+      left: calc(10px + 50 * (Math.random() - 0.5) + px);
+    }
+  </style>
+</head>
+<body>
+  <h1>¿Quieres ser mi novia? 💖</h1>
+  <img src="https://i.imgur.com/tm5gXGz.png" alt="Amor" />
+  <div class="botones">
+    <button class="si" onclick="window.location.href='si.html'">Sí</button>
+    <button class="no" onmouseover="mover(this)">No</button>
+  </div>
+
+  <script>
+    function mover(btn) {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      btn.style.position = "absolute";
+      btn.style.left = x + "px";
+      btn.style.top = y + "px";
+    }
+  </script>
+</body>
+</html>
