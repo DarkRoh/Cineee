@@ -14,14 +14,6 @@ body {
     text-align: center;
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el contenido */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 90%; /* Limita el ancho del contenedor */
-}
-
 h1 {
     font-size: 3em;
     margin-bottom: 30px;
